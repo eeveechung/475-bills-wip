@@ -303,7 +303,8 @@ app.get('/pay_add', function(req, res) {
 })
 
 app.get('/getPays', pay_controller.getPays);
-app.get('/completeBill/:id', bill_controller.completeBill);
+app.get('/hidePay/:id', pay_controller.hidePay);
+app.get('/checkPay/:id', pay_controller.checkPay);
 app.get('/completePay/:id', pay_controller.completePay);
 
 

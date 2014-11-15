@@ -6,7 +6,8 @@ var paySchema = new mongoose.Schema({
 	payer				:String,
 	partial_amount		:Number,
 	obsolete			:String,
-	active				:Boolean
+	complete			:Boolean,
+	check				:Boolean
 });
 
 module.exports = mongoose.model('Pay', paySchema);

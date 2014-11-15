@@ -49,10 +49,9 @@
 
       <div class="content-dash">
         <form action="/bill_add_new" method="post">
-          <input id="bill_name" name ="bill_name" type="text" placeholder="Bill Name"/><br>
-          <input id="description" name="description" type="text" placeholder="Bill Description"/><br>
-          <input id="amount" name="amount" type="text" placeholder="Amount"/><br>
-          Date: <input id="date" name="date" type="date" placeholder="MM/DD/YYYY"><br>
+          Bill Name: <input id="bill_name" name ="bill_name" type="text" placeholder="Bill Name"/><br>
+          Total Amount of Bill: <input id="amount" name="amount" type="text" placeholder="Amount"/><br>
+          Date Paid: <input id="date" name="date" type="date" placeholder="MM/DD/YYYY"><br>
           Paid By: <select id="user_name" name="user_name"> 
             <% for(var i=0; i<members.length; i++) {%>
              <option value="<%= members[i] %>"> <%= members[i] %> </option>
